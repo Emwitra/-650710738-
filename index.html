@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FA8072;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #F5DEB3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>DIOR</h1>
+</div>
+<div class="topnav">
+  <a href="https://emwitra.w3spaces.com/product_detail.html">Product</a>
+  <a href="https://emwitra.w3spaces.com/about.html">about us</a>
+
+</div>
+  <div class="column">
+    <h2>Dior Addct lip Glow</h2>
+     <div class="container" Align=center>
+    <img src="https://cdn.shopify.com/s/files/1/0463/7432/2326/products/Y0996214_C021400031_E01_GHC_e226fd7a-6e33-4dd6-a4ba-0d7e3ec074c6_400x.jpg?v=1675651834" class="rounded" width="250" height="320">
+     </div>
+    <p>ลิปบาล์มตัวแรกสูตรธรรมชาติของ Dior ที่ประกอบด้วยส่วนผสมจากธรรมชาติถึง 97%*
+Dior Lip Glow เป็นลิปบาล์มที่เป็นหัวใจหลักของความชุ่มชื่น ช่วยเติมเต็มความอวบอิ่มพร้อมมอบสีตามธรรมชาติของสีริมฝีปากและให้ความชุ่มชื้นยาวนาน 24 ชั่วโมง</p>
+  </div>
+</div>
+</body>
+ </html>
